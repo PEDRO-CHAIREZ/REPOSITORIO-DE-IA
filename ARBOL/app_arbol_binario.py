@@ -11,11 +11,11 @@ class Arbol:
     
     # Método para saber si el árbol está vacío
     def vacio(self):
-        return self.raiz is None
+        return self.raiz == None
     
     # Método para insertar un nodo en el árbol
     def insertar(self, valor):
-        if self.raiz is None:
+        if self.raiz == None:
             self.raiz = Nodo(valor)
         else:
             self._insertar_recursivo(self.raiz, valor)
@@ -23,12 +23,12 @@ class Arbol:
     # Método auxiliar para insertar
     def _insertar_recursivo(self, nodo, valor):
         if valor < nodo.valor:
-            if nodo.izquierda is None:
+            if nodo.izquierda == None:
                 nodo.izquierda = Nodo(valor)
             else:
                 self._insertar_recursivo(nodo.izquierda, valor)
         else:
-            if nodo.derecha is None:
+            if nodo.derecha == None:
                 nodo.derecha = Nodo(valor)
             else:
                 self._insertar_recursivo(nodo.derecha, valor)
@@ -45,7 +45,9 @@ class Arbol:
             return True
         return self._buscar_preorden(nodo.izquierda, valor) or self._buscar_preorden(nodo.derecha, valor)
     
+    # Método para imprimir el árbol
     def imprimirArbol(self, nodo=None, prefijo="", es_izquierda=True):
+        
         if nodo is None:
             nodo = self.raiz
         
@@ -57,16 +59,29 @@ class Arbol:
         if nodo.izquierda:
             self.imprimirArbol(nodo.izquierda, prefijo + ("    " if es_izquierda else "│   "), True)
 
-# Ejemplo de uso
+# Pruebas:
+
+#Se crea un árbol
 arbol = Arbol()
+
+#Se insertan nodos al árbol
 arbol.insertar(10)
 arbol.insertar(5)
 arbol.insertar(15)
 arbol.insertar(3)
 arbol.insertar(7)
+arbol.insertar(11)
 
-print("Árbol:")
+#Se imprime el árbol
+print("Árbol")
 arbol.imprimirArbol()
 
-print("\n¿Existe 10 en el árbol?:", arbol.buscarNodo(10))
-print("¿Existe 20 en el árbol?:", arbol.buscarNodo(20))
+#Se buscan nodos en el árbol
+numero_1 = 5
+numero_2 = 20
+
+if arbol.buscarNodo(numero_1):
+        print(f"\nNodo {numero_1} encontrado")
+else:
+        print("\nNodo no encontrado")
+
