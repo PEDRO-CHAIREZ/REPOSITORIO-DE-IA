@@ -22,7 +22,7 @@ class Arbol:
     
     # Método auxiliar para insertar
     def _insertar_recursivo(self, nodo, valor):
-        if valor < nodo.valor:
+        if valor <= nodo.valor:
             if nodo.izquierda == None:
                 nodo.izquierda = Nodo(valor)
             else:
@@ -47,19 +47,18 @@ class Arbol:
     
     # Método para imprimir el árbol
     def imprimirArbol(self, nodo=None, prefijo="", es_izquierda=True):
-        
         if nodo is None:
             nodo = self.raiz
+        if nodo is not None:  # Asegúrate de que nodo no sea None
+            if nodo.derecha:
+                self.imprimirArbol(nodo.derecha, prefijo + ("│   " if es_izquierda else "    "), False)
         
-        if nodo.derecha:
-            self.imprimirArbol(nodo.derecha, prefijo + ("│   " if es_izquierda else "    "), False)
+            print(prefijo + ("└── " if es_izquierda else "┌── ") + str(nodo.valor))
         
-        print(prefijo + ("└── " if es_izquierda else "┌── ") + str(nodo.valor))
-        
-        if nodo.izquierda:
-            self.imprimirArbol(nodo.izquierda, prefijo + ("    " if es_izquierda else "│   "), True)
+            if nodo.izquierda:
+                self.imprimirArbol(nodo.izquierda, prefijo + ("    " if es_izquierda else "│   "), True)
 
-# Pruebas:
+# Prueba #2:
 
 #Se crea un árbol
 arbol = Arbol()
@@ -76,12 +75,17 @@ arbol.insertar(11)
 print("Árbol")
 arbol.imprimirArbol()
 
+#Se verifica si el árbol está vacío
+if arbol.vacio():
+        print(f"\nEl arbol esta vacio")
+else:
+        print("\nEl arbol no esta vacio")
+
 #Se buscan nodos en el árbol
 numero_1 = 5
 numero_2 = 20
 
-if arbol.buscarNodo(numero_1):
-        print(f"\nNodo {numero_1} encontrado")
+if arbol.buscarNodo(numero_2):
+        print(f"\nNodo {numero_2} encontrado")
 else:
         print("\nNodo no encontrado")
-
