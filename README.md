@@ -24,4 +24,7 @@ Resumen PDF en equipo sobre el documento **A guide to intelligent Systems**.
 Archivo word con investigacion sobre agentes deliberativos e hibridos.
 Archivo PDF con diapositivas sobre agentes deliberativos e hibridos.
 
-
+### PUZZLE 8 (TAREA 4)
+Código el lenguaje python que simula un PUZZLE 8 usando el algoritmo A*.
+En base a un estado inicial, calcula el mejor de multiples caminos usando la ditancia de Manhattan para llegar a la meta.
+Muestra cada movimiento hecho, cuantos fueron y cuanto tardo en hacerlo.
