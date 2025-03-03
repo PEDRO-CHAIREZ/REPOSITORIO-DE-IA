@@ -16,7 +16,7 @@ class Puzzle:
                 if self.board[i][j] == 0:
                     return i, j
                 
-    # Método para comparar el resultado de la instancias de dos instancias
+    # Método para comparar el resultado de dos instancias
     def __lt__(self, other):
         return (self.moves + self.heuristic()) < (other.moves + other.heuristic())
     
@@ -29,7 +29,7 @@ class Puzzle:
         # Suma de las distancias Manhattan de cada número a su posición final
         return sum(abs(i - goal[val][0]) + abs(j - goal[val][1])
                    for i, row in enumerate(self.board)
-                   for j, val in enumerate(row) if val)
+                   for j, val in enumerate(row) if val) 
     
     # Método para obtener todos los posibles movimientos
     def possible_moves(self):
@@ -82,9 +82,9 @@ def solve_puzzle(start_board):
 # Función principal para resolver el puzzle
 if __name__ == "__main__":
     # Tablero de inicio
-    start_board = [[4, 2, 3],
-                   [5, 0, 1],
-                   [6, 7, 8]]
+    start_board = [[1, 5, 3],
+                   [6, 0, 4],
+                   [7, 2, 8]]
     
     # Se resuelve el puzzle y se obtiene la solución
     solution, moves, duration = solve_puzzle(start_board)
