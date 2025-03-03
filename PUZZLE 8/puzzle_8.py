@@ -8,7 +8,7 @@ class Puzzle:
         self.moves = moves
         self.previous = previous
         self.zero_pos = self.find_zero()
-    
+
     # Método para encontrar la posición del 0 en el tablero
     def find_zero(self):
         for i in range(3):
@@ -16,11 +16,11 @@ class Puzzle:
                 if self.board[i][j] == 0:
                     return i, j
                 
-    # Método para comparar el resultado de dos instancias
+     # Método para comparar el resultado de dos instancias            
     def __lt__(self, other):
         return (self.moves + self.heuristic()) < (other.moves + other.heuristic())
     
-    # Método para calcular la heurística de cada instancia
+     # Método para calcular la heurística de cada instancia
     def heuristic(self):
         # Objetivo/meta final
         goal = {1: (0, 0), 2: (0, 1), 3: (0, 2),
@@ -35,17 +35,17 @@ class Puzzle:
     def possible_moves(self):
         x, y = self.zero_pos
         moves = []
-        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        directions = [(-1, 0), (1, 0), (0, -1), (0, 1)] #Arriba, abajo, izquierda, derecha
         
         for dx, dy in directions:
             nx, ny = x + dx, y + dy
             if 0 <= nx < 3 and 0 <= ny < 3:
                 new_board = [list(row) for row in self.board]
+                # Intercambio de posiciones para obtener un nuevo tablero
                 new_board[x][y], new_board[nx][ny] = new_board[nx][ny], new_board[x][y]
                 moves.append(Puzzle(new_board, self.moves + 1, self))
         
         return moves
-    
     # Método para reconstruir el camino de la solución
     def reconstruct_path(self):
         path = []
@@ -56,10 +56,10 @@ class Puzzle:
         return path[::-1]
     
 
-# Método para resolver el puzzle    
+# Método para resolver el puzzle
 def solve_puzzle(start_board):
-    start_time = time.time()
-    start = Puzzle(start_board) # Instancia inicial
+    start_time = time.time() # Aqui se toma el tiempo inicial
+    start = Puzzle(start_board)
     heap = [start] # Se crea la cola
     visited = set() # Conjunto de nodos visitados
     
@@ -77,16 +77,15 @@ def solve_puzzle(start_board):
             if tuple(tuple(row) for row in move.board) not in visited:
                 heapq.heappush(heap, move)
     
-    return None, 0, 0 # Si no hay solución, se retorna None
+    end_time = time.time()
+    return None, 0, end_time - start_time # Si no hay solución, se retorna nulo y el tiempo
 
-# Función principal para resolver el puzzle
 if __name__ == "__main__":
     # Tablero de inicio
     start_board = [[1, 5, 3],
                    [6, 0, 4],
                    [7, 2, 8]]
     
-    # Se resuelve el puzzle y se obtiene la solución
     solution, moves, duration = solve_puzzle(start_board)
     if solution:
         for step in solution: # Se imprime cada paso de la solución
@@ -97,8 +96,7 @@ if __name__ == "__main__":
         print(f"Tiempo de resolución: {duration:.4f} segundos")
     else:
         print("No hay solución")
+        print(f"Tiempo transcurrido: {duration:.4f} segundos")
 
-
-
-
-
+    #EJEMPLO SIN SOLUCION
+#[[1, 2, 3],[4, 5, 6],[8, 7, 0]]
