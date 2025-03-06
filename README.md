@@ -6,6 +6,7 @@ Este repositorio se creo con el proposito de administrar proyectos y tareas que 
 - [@ArmentaG](https://github.com/ArmentaG)
 
 ## ARCHIVOS:
+## MODULO 1
 ### ARBOL (TAREA 1)
 #### app_arbol_binario:
 Este código implementa un arbol binario de búsqueda lenguaje Python con una clase Nodo y una clase Arbol. Se incluyen métodos para verificar si el arbol esta vacio, insertar valores numericos, buscar un nodo y visualizar el árbol de manera mas estructurada.
@@ -28,3 +29,7 @@ Archivo PDF con diapositivas sobre agentes deliberativos e hibridos.
 Código el lenguaje python que simula un PUZZLE 8 usando el algoritmo A*.
 En base a un estado inicial, calcula el mejor de multiples caminos usando la ditancia de Manhattan para llegar a la meta.
 Muestra cada movimiento hecho, cuantos fueron y cuanto tardo en hacerlo.
+
+## MODULO 2
+
+### PARADIGMAS DE LA IA (TAREA 5)
