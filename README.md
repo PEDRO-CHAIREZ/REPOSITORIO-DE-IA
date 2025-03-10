@@ -33,3 +33,7 @@ Muestra cada movimiento hecho, cuantos fueron y cuanto tardo en hacerlo.
 ## MODULO 2
 
 ### PARADIGMAS DE LA IA (TAREA 5)
+Diapositivas sobre los dos enfoques (conexionista y simbolico) de la IA con sus ejemplos y el proceso de aprendizaje automatico.
+Codigo python de ejemplo para el enfoque simbolico.
+Link del repositorio de Redes Neuronales Convolucionales (para el enfoque conexionista):
+https://github.com/demstalferez/Reconomiento-de-digitos-con-red-neuronal/tree/main?tab=readme-ov-file#uso
