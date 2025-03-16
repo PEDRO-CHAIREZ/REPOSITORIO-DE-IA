@@ -32,8 +32,11 @@ Muestra cada movimiento hecho, cuantos fueron y cuanto tardo en hacerlo.
 
 ## MODULO 2
 
-### PARADIGMAS DE LA IA (TAREA 5)
+### PARADIGMAS DE LA IA (TAREA 1)
 Diapositivas sobre los dos enfoques (conexionista y simbolico) de la IA con sus ejemplos y el proceso de aprendizaje automatico.
 Codigo python de ejemplo para el enfoque simbolico.
 Link del repositorio de Redes Neuronales Convolucionales (para el enfoque conexionista):
 https://github.com/demstalferez/Reconomiento-de-digitos-con-red-neuronal/tree/main?tab=readme-ov-file#uso
+
+### RED SEMÁNTICA (TAREA 2)
+Documento PDF con la red semántica de la plataforma MAX (HBO MAX). Documento word con la descripción del negocio y las categorías, y una captura de la solución, (la red semántica).
