@@ -40,3 +40,8 @@ https://github.com/demstalferez/Reconomiento-de-digitos-con-red-neuronal/tree/ma
 
 ### RED SEMÁNTICA (TAREA 2)
 Documento PDF con la red semántica de la plataforma MAX (HBO MAX). Documento word con la descripción del negocio y las categorías, y una captura de la solución, (la red semántica).
+
+### DETECCIÓN DE CORREO SPAM (TAREA 3)
+Documento CSV con correos clasificados - [The Spam Assassin Email Classification Dataset](https://github.com/PEDRO-CHAIREZ](https://www.kaggle.com/datasets/ganiyuolalekan/spam-assassin-email-classification-dataset)).
+Código (correos.py) que procesa los datos en el codumento CSV y extrae las caracteristicas de los datos (TF, IDF, TF-IDF), y entrena el modelo con el teorema de Bayes.
+Documento word con evidencia de la ejecución.
