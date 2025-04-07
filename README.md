@@ -47,5 +47,5 @@ Código (correos.py) que procesa los datos en el codumento CSV y extrae las cara
 Documento word con evidencia de la ejecución.
 
 ### SISTEMA EXPERTO (TAREA 4)
-Documento CSV con información de recetas - [RAW_recipes.csv](https://github.com/PEDRO-CHAIREZ]([https://www.kaggle.com/datasets/ganiyuolalekan/spam-assassin-email-classification-dataset](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?resource=download&select=RAW_recipes.csv))).
+Documento CSV con información de recetas - [RAW_recipes.csv](https://github.com/PEDRO-CHAIREZ]([https://www.kaggle.com/datasets/ganiyuolalekan/spam-assassin-email-classification-dataset](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?resource=download&select=RAW_recipes.csv))), DEMASIADO PESADO PARA GITHUB.
 Documento word con descripción del problema y objetivo del sistema experto de recomendacion de recetas.
