@@ -54,3 +54,6 @@ Documento word con descripción del problema y objetivo del sistema experto de r
 
 ### SISTEMA EXPERTO - REGLAS (TAREA 2)
 Documento WORD con las reglas del sistema experto en lenguaje natural. Documento PDF con diagrama de inferencia, permitinedo visualizar las reglas del sistema experto.
+
+### SISTEMA EXPERTO - BASE DE CONOCIMIENTO (TAREA 3)
+Documento WORD con la transformación de la reglas establecidas anteriormente a logica de primer orden para crear la base de conocimiento del sistema experto. Debido a la gran cantidad de reglas (mas de 300) y para facilitar la comprención del documento, se transformaron pocas pero diversas reglas abarcando por completo el documento.
