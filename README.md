@@ -62,3 +62,8 @@ Documento WORD con la transformación de la reglas establecidas anteriormente a 
 Código del sistema experto recomendador de recetas de cocina.
 Diapositivas con un resumen del proyeto.
 Documento CSV con recetas - [Recipes and Interactions](https://github.com/PEDRO-CHAIREZ][(https://www.kaggle.com/datasets/ganiyuolalekan/spam-assassin-email-classification-dataset)](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions/data?select=RAW_recipes.csv)).
+
+## MODULO 4
+
+### DATASET DE CARAS (TAREA 1)
+Documento WORD con información describiendo el dataset.
