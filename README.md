@@ -69,6 +69,6 @@ Documento CSV con recetas - [Recipes and Interactions](https://github.com/PEDRO-
 Documento WORD con información describiendo el dataset.
 
 ### RECONOCEDOR DE EMOCIONES (TAREA 2)
-Documento WORD con información describiendo el proyecto.
+Documento WORD con información describiendo el proyecto, y link del video en youtube.
 Video de evidencia demostrando que funciona.
 Codigo del proyecto.
