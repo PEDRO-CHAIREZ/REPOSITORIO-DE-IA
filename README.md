@@ -70,5 +70,5 @@ Documento WORD con información describiendo el dataset.
 
 ### RECONOCEDOR DE EMOCIONES (TAREA 2)
 Documento WORD con información describiendo el proyecto.
-Video demostrando el funcionamiento.
+Video de evidencia demostrando que funciona.
 Codigo del proyecto.
