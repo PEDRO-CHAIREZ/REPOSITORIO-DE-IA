@@ -67,3 +67,8 @@ Documento CSV con recetas - [Recipes and Interactions](https://github.com/PEDRO-
 
 ### DATASET DE CARAS (TAREA 1)
 Documento WORD con información describiendo el dataset.
+
+### RECONOCEDOR DE EMOCIONES (TAREA 2)
+Documento WORD con información describiendo el proyecto.
+Video demostrando el funcionamiento.
+Codigo del proyecto.
